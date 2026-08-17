@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Fusion — Technical Document RAG Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar for document management -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-icon">🚀</span>
+                    <h1>Tech Fusion</h1>
+                </div>
+                <p class="subtitle">Document Control Center</p>
+            </div>
+            
+            <div class="sidebar-section">
+                <h2>Upload PDFs</h2>
+                <div class="upload-dropzone" id="uploadDropzone">
+                    <input type="file" id="fileInput" accept=".pdf" multiple style="display: none;">
+                    <div class="dropzone-content">
+                        <span class="upload-icon">📥</span>
+                        <p>Drag & drop PDFs or <span class="browse-link">browse</span></p>
+                        <span class="file-limits">PDF only (max 10MB)</span>
+                    </div>
+                </div>
+                <div id="uploadProgress" class="progress-container" style="display: none;">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span id="progressText">Uploading...</span>
+                </div>
+            </div>
+            
+            <div class="sidebar-section list-section">
+                <h2>Available Documents</h2>
+                <ul class="document-list" id="documentList">
+                    <li class="empty-list">No PDFs found</li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-footer">
+                <button class="btn btn-primary btn-block" id="btnIngest">
+                    <span class="btn-icon">⚡</span> Ingest & Rebuild DB
+                </button>
+                <div class="status-indicator" id="dbStatus">
+                    <span class="status-dot status-healthy"></span>
+                    <span id="statusText">System Ready</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main workspace for chat interface -->
+        <main class="chat-workspace">
+            <header class="chat-header">
+                <div class="header-info">
+                    <h2>AI Assistant</h2>
+                    <span class="header-badge">RAG Pipeline</span>
+                </div>
+                <div class="header-actions">
+                    <button class="btn btn-secondary" id="btnClearChat">Clear Conversaton</button>
+                </div>
+            </header>
+
+            <div class="chat-messages" id="chatMessages">
+                <!-- Welcome Message -->
+                <div class="message system-message">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-content">
+                        <h3>Welcome to Tech Fusion!</h3>
+                        <p>I am your technical document assistant. Upload your PDFs in the control panel on the left, build the database, and ask me any questions about their contents.</p>
+                        <div class="quick-tips">
+                            <span>💡 Answers are grounded directly in your documents.</span>
+                            <span>📎 Citations are automatically generated with page numbers.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="chat-footer">
+                <form class="input-form" id="inputForm">
+                    <input type="text" id="queryInput" placeholder="Ask a question about your uploaded documents..." required autocomplete="off">
+                    <button type="submit" class="btn btn-send" id="btnSend">
+                        <span class="send-icon">➔</span>
+                    </button>
+                </form>
+            </footer>
+        </main>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+pdf_directory: data/documents/pdfs
+chroma_directory: data/chroma_db
+collection_name: tech_fusion_documents
+
+chunking:
+  chunk_size: 1000
+  chunk_overlap: 200
+
+retrieval:
+  top_k: 5
+
+embeddings:
+  model: all-MiniLM-L6-v2
+
+llm:
+  provider: groq  # options: gemini, groq
+  model: llama-3.1-8b-instant
+  temperature: 0.2

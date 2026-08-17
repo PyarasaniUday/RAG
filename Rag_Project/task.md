@@ -1,0 +1,15 @@
+# Tasks
+
+- `[x]` Step 1: Create project folders and files skeleton (`requirements.txt`, `.gitignore`, `.env`, `config.yaml`, and module structures)
+- `[x]` Step 2: Implement logging and configuration helper (`src/utils/helpers.py`)
+- `[x]` Step 3: Implement and test PDF Loader (`src/ingestion/pdf_loader.py` & `tests/test_loader.py`)
+- `[x]` Step 4: Implement and test Text Chunker (`src/chunking/text_chunker.py` & `tests/test_chunking.py`)
+- `[x]` Step 5: Implement and test Embedding Model module (`src/embeddings/embedding_model.py` & `tests/test_embeddings.py`)
+- `[x]` Step 6: Implement and test Chroma Store integration (`src/vectorstore/chroma_store.py`)
+- `[x]` Step 7: Implement Similarity Search (`src/retrieval/similarity_search.py` & `tests/test_retrieval.py`)
+- `[x]` Step 8: Implement Page Content Extractor (`src/context/page_extractor.py`)
+- `[x]` Step 9: Implement Prompt Template (`src/prompts/prompt_template.py`)
+- `[x]` Step 10: Implement LLM client with Google Gemini support (`src/llm/llm_client.py`)
+- `[x]` Step 11: Implement API routes and main entrypoint (`src/api/routes.py` & `main.py`)
+- `[x]` Step 12: Implement API integration tests (`tests/test_api.py`)
+- `[x]` Step 13: Final integration verification and write documentation (`README.md`)
