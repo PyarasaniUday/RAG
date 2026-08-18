@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Tech Fusion — PDF-based Retrieval-Augmented Generation (RAG) Repository
 
 Welcome to the **Tech Fusion** Git repository. This repository contains a modular, production-style Retrieval-Augmented Generation (RAG) system designed to load, chunk, embed, and index technical PDF documents into a local vector store, and perform context-grounded querying via the Google Gemini API.
@@ -86,6 +85,3 @@ uvicorn main:app --reload
 You can access the API interactive documentation at `http://127.0.0.1:8000/docs` and send POST requests to the `/query` endpoint.
 
 For more granular details, refer to the project's internal **[Rag_Project/README.md](file:///c:/Users/UDAY%20KUMAR/OneDrive/Desktop/EL_KMCE/RAG_EXERCISES/RAG/Rag_Project/README.md)**.
-=======
-# RAG 
->>>>>>> a5a29c6ae297e1eff8422ccf11ce84be0c761078
