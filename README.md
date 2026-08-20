@@ -6,7 +6,7 @@ Welcome to the **Tech Fusion** Git repository. This repository contains a modula
 
 ## 📁 Repository Structure
 
-The repository is structured as follows:
+The repository is structured as followss:
 
 * **[README.md](file:///c:/Users/UDAY%20KUMAR/OneDrive/Desktop/EL_KMCE/RAG_EXERCISES/RAG/README.md)** (this file): Root-level repository guide and overview.
 * **[Rag_Project/](file:///c:/Users/UDAY%20KUMAR/OneDrive/Desktop/EL_KMCE/RAG_EXERCISES/RAG/Rag_Project/)**: The core RAG application workspace containing:
